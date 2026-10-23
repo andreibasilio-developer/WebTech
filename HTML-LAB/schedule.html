@@ -5,18 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LAB 6</title>
     <style>
-      #scheds,
-      #rooms,
-      .subs,
-      .days,
-      .teacher, .no-class {
+      .days, .scheds, .subs, .rooms, .teacher, .no-class {
         text-align: center;
+      }
+      #table-container {
+        width: 100%;
       }
     </style>
   </head>
   <body>
-    <h1>Here are my schedules as a BSIT student at UC.</h1>
-    <table border="1" style="width: 100%">
+    <h1>Here are my schedules as a BSIT student at UC:</h1>
+    <table id="table-container" border= "5">
       <tr>
         <th>Date</th>
         <th>Time</th>
@@ -26,26 +25,20 @@
       </tr>
       <tr>
         <td rowspan="2" class="days">TThSat</td>
-        <td id="scheds">
-          7:30 AM - 8:50 AM (Lec),<br />
-          8:50 AM - 10:10 AM (Lab)
-        </td>
+        <td class="scheds">7:30 AM - 8:50 AM (Lec),<br> 8:50 AM - 10:10 AM (Lab)</td>
         <td class="subs">CIT14 (Web Technologies)</td>
-        <td id="rooms">
-          U703 (Lec), <br />
-          M307 (Lab)
-        </td>
+        <td class="rooms">U703 (Lec), <br>M307 (Lab)</td>
         <td class="teacher">Sir. Leonardo Prim Reyes</td>
       </tr>
       <tr>
-        <td id="scheds">11:30 AM - 12:50 PM</td>
+        <td class="scheds">11:30 AM - 12:50 PM</td>
         <td class="subs">CIT5 (Accounting Essentials)</td>
-        <td id="rooms">U705</td>
+        <td class="rooms">U705</td>
         <td class="teacher">Sir. Walter Mang-usan</td>
       </tr>
       <tr>
         <td class="days">MWF</td>
-        <td id="scheds">8:50 AM - 10:10 AM</td>
+        <td class="scheds">8:50 AM - 10:10 AM</td>
         <td colspan="3" class="no-class">No class</td>
       </tr>
     </table>
