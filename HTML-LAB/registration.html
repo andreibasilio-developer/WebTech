@@ -12,11 +12,13 @@
   </head>
   <body>
     <form action="/submit" method="post">
+        <p>Enter your name:</p>
       <div class="field">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required />
       </div>
       <div class="field">
+        <p>Enter your student ID:</p>
         <label for="stud_id">Student ID:</label>
         <input
           type="text"
@@ -33,6 +35,7 @@
         <input type="email" id="email" name="email" required />
       </div>
       <div class="field">
+        <p>Enter your password:</p>
         <label for="password">Password:</label>
         <input
           type="password"
@@ -47,6 +50,7 @@
         />
       </div>
       <div class="field">
+        <p>Enter your birthdate:</p>
         <label for="birthday">Birthday:</label>
         <input
           type="date"
@@ -75,15 +79,19 @@
       <div class="field">
         <p>Hobbies:</p>
         <label for="Coding">Coding</label>
-        <input type="checkbox" id="Coding" />
+        <input type="checkbox" id="Coding" name="hobbies"/>
         <label for="Reading">Reading</label>
-        <input type="checkbox" id="Reading" />
+        <input type="checkbox" id="Reading" name="hobbies"/>
         <label for="Writing">Writing</label>
-        <input type="checkbox" id="Writing" />
+        <input type="checkbox" id="Writing" name="hobbies"/>
         <label for="Editing">Editing</label>
-        <input type="checkbox" id="Editing" />
+        <input type="checkbox" id="Editing" name="hobbies" />
         <label for="skills">Learning new skills</label>
-        <input type="checkbox" id="skills" />
+        <input type="checkbox" id="skills" name="hobbies" />
+      </div>
+      <div>
+        <label for="commenr">Comment</label>
+        <textarea name="comment" id="comment"></textarea>
       </div>
       <div class="field">
         <label for="reset">Reset if you want to repeat again:</label>
