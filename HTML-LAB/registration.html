@@ -41,11 +41,20 @@
           required
           minlength="8"
           maxlength="96"
+          pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9]).*"
+          placeholder="e.g Akosipogi@2006"
+          title="Must have at least 1 uppercase, 1 lowercase, 1 digit, and 1 special character."
         />
       </div>
       <div class="field">
         <label for="birthday">Birthday:</label>
-        <input type="date" id="birthday" name="birthday" required />
+        <input
+          type="date"
+          id="birthday"
+          name="birthday"
+          required
+          placeholder="11-01-2006"
+        />
       </div>
       <div class="field">
         <label for="gender">Gender:</label>
@@ -56,7 +65,35 @@
           <option value="blank" disabled selected>Select your gender</option>
         </select>
       </div>
-      <button type="submit">Register</button>
+      <div class="field">
+        <p>Select your academic program:</p>
+        <label for="BSIT">BSIT</label>
+        <input type="radio" id="BSIT" name="program" required checked />
+        <label for="BSCS">BSCS</label>
+        <input type="radio" id="BSCS" name="program" required />
+      </div>
+      <div class="field">
+        <p>Hobbies:</p>
+        <label for="Coding">Coding</label>
+        <input type="checkbox" id="Coding" />
+        <label for="Reading">Reading</label>
+        <input type="checkbox" id="Reading" />
+        <label for="Writing">Writing</label>
+        <input type="checkbox" id="Writing" />
+        <label for="Editing">Editing</label>
+        <input type="checkbox" id="Editing" />
+        <label for="skills">Learning new skills</label>
+        <input type="checkbox" id="skills" />
+      </div>
+      <div class="field">
+        <label for="reset">Reset if you want to repeat again:</label>
+        <button type="reset">Reset</button>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="terms" name="agree" required />
+        <label for="terms">I agree to the terms and conditions.</label>
+      </div>
+      <div class="field"><button type="submit">Register</button></div>
     </form>
   </body>
 </html>
