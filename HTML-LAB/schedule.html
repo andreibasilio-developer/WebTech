@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LAB 6</title>
+    <style>
+      #scheds,
+      #rooms,
+      .subs,
+      .days,
+      .teacher, .no-class {
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <h1>Here are my schedules as a BSIT student at UC.</h1>
@@ -16,22 +25,28 @@
         <th>Instructor</th>
       </tr>
       <tr>
-        <td rowspan="2">TThSat</td>
-        <td>7:30 AM - 8:50 AM (Lec),<br> 8:50 AM - 10:10 AM (Lab)</td>
-        <td>CIT14 (Web Technologies)</td>
-        <td>U703 (Lec), <br> M307 (Lab)</td>
-        <td>Sir. Leonardo Prim Reyes</td>
+        <td rowspan="2" class="days">TThSat</td>
+        <td id="scheds">
+          7:30 AM - 8:50 AM (Lec),<br />
+          8:50 AM - 10:10 AM (Lab)
+        </td>
+        <td class="subs">CIT14 (Web Technologies)</td>
+        <td id="rooms">
+          U703 (Lec), <br />
+          M307 (Lab)
+        </td>
+        <td class="teacher">Sir. Leonardo Prim Reyes</td>
       </tr>
       <tr>
-        <td>11:30 AM - 12:50 PM</td>
-        <td>CIT5 (Accounting Essentials)</td>
-        <td>U705</td>
-        <td>Sir. Walter Mang-usan</td>
+        <td id="scheds">11:30 AM - 12:50 PM</td>
+        <td class="subs">CIT5 (Accounting Essentials)</td>
+        <td id="rooms">U705</td>
+        <td class="teacher">Sir. Walter Mang-usan</td>
       </tr>
       <tr>
-        <td>MWF</td>
-        <td>8:50 AM - 10:10 AM</td>
-        <td colspan="3" style="text-align: center">No class</td>
+        <td class="days">MWF</td>
+        <td id="scheds">8:50 AM - 10:10 AM</td>
+        <td colspan="3" class="no-class">No class</td>
       </tr>
     </table>
   </body>
