@@ -33,9 +33,27 @@
     <h1>CONTACTS</h1>
     <img src="Me.png" alt="andrei" />
     <form action="">
-      <div class="fills"><label for="name">Name:</label></div>
-      <div class="fills"><label for="email">Email:</label></div>
-      <div class="fills"><label for="Password">Password:</label></div>
+      <div class="fills">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+      </div>
+      <div class="fills">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+      </div>
+      <div class="fills">
+        <label for="Password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          minlength="8"
+          maxlength="96"
+          pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[^A-Za-z0-9]).*"
+          placeholder="Akolangtoh@2006"
+          title="The password must contain at least: 1 uppercase, 1 lowercase, 1 digit, and 1 special letter."
+        />
+      </div>
       <div class="fills"><label for="subject">Subject:</label></div>
       <div class="fills"><label for="message">Message:</label></div>
       <div>
