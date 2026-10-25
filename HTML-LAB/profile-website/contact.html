@@ -10,6 +10,9 @@
         gap: 20px;
         list-style: none;
       }
+      img {
+        margin-bottom: 20px;
+      }
       .tb-layout {
         width: 70%;
         height: 100px;
@@ -67,10 +70,16 @@
         <label for="message">Message:</label><br />
         <textarea name="message" id="message"></textarea>
       </div>
-      
       <div class="fills">
-        <label for="submit">Please click the submit button once done:</label>
-        
+        <label class="btn" for="reset">Reset if you want to do again:</label
+        ><br /><br />
+        <button type="reset" id="reset" name="reset">Reset</button>
+      </div>
+      <div class="fills">
+        <label class="btn" for="submit"
+          >Please click the submit button once done:</label
+        ><br /><br />
+        <button type="submit" id="submit" name="submit">SUBMIT</button>
       </div>
     </form>
   </body>
