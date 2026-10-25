@@ -17,6 +17,10 @@
       .fills {
         margin-bottom: 20px;
       }
+      .textarea {
+        width: 60%;
+        height: 200px;
+      }
     </style>
   </head>
   <header>
@@ -35,11 +39,11 @@
     <form action="">
       <div class="fills">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" />
+        <input type="text" id="name" name="name" required />
       </div>
       <div class="fills">
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" />
+        <input type="email" id="email" name="email" required />
       </div>
       <div class="fills">
         <label for="Password">Password:</label>
@@ -52,10 +56,17 @@
           pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[^A-Za-z0-9]).*"
           placeholder="Akolangtoh@2006"
           title="The password must contain at least: 1 uppercase, 1 lowercase, 1 digit, and 1 special letter."
+          required
         />
       </div>
-      <div class="fills"><label for="subject">Subject:</label></div>
-      <div class="fills"><label for="message">Message:</label></div>
+      <div class="fills">
+        <label for="subject">Subject (Optional):</label>
+        <input type="text" id="subject" name="subject" />
+      </div>
+      <div class="fills text">
+        <label for="message">Message:</label><br />
+        <textarea name="message" id="message"></textarea>
+      </div>
       <div>
         <label for="submit">Please click the submit button once done:</label>
       </div>
