@@ -12,29 +12,31 @@
     <input type="checkbox" name="" id="" />
     <input type="radio" name="" id="" />
     <input type="submit" value="" />
-    form>label[for="student-id"]{Student
-    ID:}+input:text#student-id+label[for="fullname"]{Full Name:} +<input
-      type="text"
-      name=""
-      id="fullname"
-    /><label for="email">Email:</label
-    ><input type="email" name="" id="email" /><label for="password"
-      >Password:</label
-    ><input type="password" name="" id="password" /><label for="gender"
-      >Gender:</label
-    >
-    <input:gender id="gender"></input:gender>
-    <label for="bsit">BSIT:</label
-    ><input type="radio" name="" id="bsit" /><label for="bscs">BSCS</label
-    ><input type="radio" name="" id="bscs" /><label for="coding">Coding</label
-    ><input type="checkbox" name="" id="coding" /><label for="writing"
-      >Writing</label
-    ><input type="checkbox" name="" id="writing" /><label for="reading"
-      >Reading</label
-    ><input type="checkbox" name="" id="reading" /><label for="address"
-      >Address:</label
-    ><textarea name="" id="address" minlength="100" maxlength="300"></textarea
-    ><label for="submit">Submit if done:</label
-    ><button type="submit" id="submit"></button>
+    <form action="/submit" method="post">
+      <label for="student-id">Student ID:</label
+      ><input type="text" name="" id="student-id" /><label for="fullname"
+        >Full Name:</label
+      >
+      <input type="text" name="" id="fullname" /><label for="email"
+        >Email:</label
+      ><input type="email" name="" id="email" /><label for="password"
+        >Password:</label
+      ><input type="password" name="" id="password" /><label for="gender"
+        >Gender:</label
+      >
+      <input:gender id="gender"></input:gender>
+      <label for="bsit">BSIT:</label
+      ><input type="radio" name="" id="bsit" /><label for="bscs">BSCS</label
+      ><input type="radio" name="" id="bscs" /><label for="coding">Coding</label
+      ><input type="checkbox" name="" id="coding" /><label for="writing"
+        >Writing</label
+      ><input type="checkbox" name="" id="writing" /><label for="reading"
+        >Reading</label
+      ><input type="checkbox" name="" id="reading" /><label for="address"
+        >Address:</label
+      ><textarea name="" id="address" minlength="100" maxlength="300"></textarea
+      ><label for="submit">Submit if done:</label
+      ><button type="submit" id="submit">Submit</button>
+    </form>
   </body>
 </html>
