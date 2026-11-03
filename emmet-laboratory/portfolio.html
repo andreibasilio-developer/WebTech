@@ -9,6 +9,10 @@
         display: flex;
         gap: 20px;
       }
+      #message {
+        width: 60%;
+        height: 150px;
+      }
     </style>
   </head>
   <body>
@@ -26,7 +30,6 @@
       <p>Basilio, Andrei Kyle I.</p>
       <p>I am a 2nd year BSIT student who loves coding.</p>
     </header>
-
     <main>
       <section id="ABOUT"></section>
       <section id="SKILLS">
@@ -50,6 +53,11 @@
           <input type="text" name="name" id="name" required="required">
           <label for="password">Password:</label>
           <input type="password" name="password" id="password" minlength="8" maxlength="96" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[^A-Za-z0-9]).*" required>
+          <label for="subject">Subject:</label>
+          <input type="text" name="subject" id="subject">
+          <label for="message">Message:</label>
+          <textarea name="message" id="message" minlength="100" maxlength="300">
+          </textarea>
         </form>
       </section>
     </main>
