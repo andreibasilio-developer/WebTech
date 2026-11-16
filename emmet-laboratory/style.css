@@ -3,3 +3,8 @@ nav ul {
   display: flex;
   gap: 20px;
 }
+
+#message {
+  width: 60%;
+  height: 150px;
+}
