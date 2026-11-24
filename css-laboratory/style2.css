@@ -22,3 +22,6 @@ ul li a {
     color: #145da0;
     text-decoration: none;
 }
+a:hover {
+    text-decoration: underline;
+}
