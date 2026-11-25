@@ -8,3 +8,9 @@
     gap: 20px;
     flex-wrap: wrap;
 }
+.card {
+    flex: 220px;
+    max-width: 300px;
+    padding: 20px;
+    background-color: white;
+}
